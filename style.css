@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary: #2791fc;
+    --text: #393b3a;
+}
+
+body {
+    font-family: 'Catamaran', sans-serif;
+    color: var(--text);
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Introduction */
+.introduction {
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--primary);
+}
+
+.intro-item {
+    flex: 0 0 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.introduction img {
+    margin: 7rem 0 1rem 0;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.hello {
+    font-size: 3.5rem;
+}
+
+.short-description {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.down {
+    margin-top: 4rem;
+    padding: 0.5rem 4.8rem;
+    border-radius: 1rem 1rem 0 0;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--text);
+    font-size: 2.5rem;
+    line-height: 0;
+    border: 2px solid var(--text);
+}
+
+.down:hover {
+    background-color: var(--primary);
+    border: 2px solid #fff;
+}
+
+/* about */
+.about {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.header {
+    font-size: 2.5rem;
+}
+
+.description {
+    font-size: 1.2rem;
+    line-height: 2;
+    width: 80%;
+}
+
+.skills h4 {
+    font-weight: 500;  
+    font-size: 1.2rem; 
+}
+
+.progress {
+    width: 100%;
+    background-color: #e1e2e196;
+    color: #e1e2e100;
+}
+
+.progress span {
+    display: none;    
+}
+
+.bar {
+    background-color: var(--text);
+    height: 100%;
+}
+
+.java {
+    width: 95%;
+}
+
+.js {
+    width: 80%;
+}
+
+.vue {
+    width: 70%;
+}
+
+.python {
+    width: 60%;
+}
+
+.css {
+    width: 50%;
+}
+
+/* porfolio */
+
+.portfolio {
+    margin-bottom: 5rem;
+}
+
+.projects {
+    font-size: 3.5rem;
+    text-align: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    flex-basis: 30%;
+    text-align: center;
+    padding: 3rem 0;
+    height: 300px;
+    box-shadow: 5px 5px 4px 3px #888888;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+}
+
+.proj-desc {
+    font-size: 1.2rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.view {
+    width: 30%;
+    padding: 0.5rem 3rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary);
+    border-radius: 1rem;
+    margin-top: auto;
+}
+
+.view:hover {
+    background-color: #fff;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+/* contact */
+
+.contact {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.contact-me {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-left {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-left input {
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.form-right {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-right input {
+    margin-top: 1rem;
+    width: 30%;
+    margin-left: auto;
+    padding: 1.2rem 2rem;
+    color: #fff;
+    cursor: pointer;
+    background-color: var(--text);
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+    height: 210px;
+    padding: 0.8rem;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+input, textarea {
+    border-radius: 0.5rem;
+    border: none;
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    font-size: 3rem;
+    color: var(--primary);
+}
+
+footer p a {
+    margin: 0 3rem;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+/* media queries */
+
+@media screen and (max-width: 960px) {
+
+    .about {
+        display: block;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 3rem;
+        width: 80%;
+    }
+
+    .form-container {
+        display: block;
+    }
+
+    .form-right input {
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+}
