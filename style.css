@@ -47,6 +47,8 @@ html {
 
 .hello {
     font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
 }
 
 .short-description {
@@ -83,12 +85,18 @@ html {
 
 .header {
     font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .description {
     font-size: 1.2rem;
     line-height: 2;
     width: 80%;
+}
+
+.description p span {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .skills h4 {
@@ -157,6 +165,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 8px;
 }
 
 .card:hover {
@@ -258,6 +267,7 @@ textarea {
     resize: none;
     height: 210px;
     padding: 0.8rem;
+    font-size: 1.2rem;
 }
 
 .form-right textarea:focus {
