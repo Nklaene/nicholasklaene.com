@@ -39,6 +39,10 @@ html {
     border-radius: 50%;
 }
 
+.introduction img:hover {
+    box-shadow: 2px 2px 1.5px 2px #000;
+}
+
 .hello {
     font-size: 3.5rem;
 }
@@ -233,9 +237,14 @@ html {
     color: #fff;
     cursor: pointer;
     background-color: var(--text);
-    border: none;
+    border: 2px solid var(--text);
     border-radius: 20px;
     font-size: 1rem;
+}
+
+.form-right input:hover {
+    background-color: var(--primary);
+    border: 2px solid #fff;
 }
 
 textarea {
@@ -253,6 +262,7 @@ input, textarea {
     border: none;
 }
 
+/* footer */
 footer {
     text-align: center;
 }
@@ -272,8 +282,14 @@ footer p a {
 
 @media screen and (max-width: 960px) {
 
+    .introduction img {
+        width: 200px;
+        height: 200px;
+    }
+
     .about {
         display: block;
+        text-align: center;
     }
 
     .description {
