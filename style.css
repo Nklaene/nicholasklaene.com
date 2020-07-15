@@ -153,6 +153,10 @@ html {
     align-items: center;
 }
 
+.card:hover {
+    box-shadow: 10px 10px 8px 3px #888888;
+}
+
 .card h3 {
     font-size: 1.4rem;
 }
@@ -171,6 +175,7 @@ html {
     background-color: var(--primary);
     border-radius: 1rem;
     margin-top: auto;
+    border: 2px solid var(--primary);
 }
 
 .view:hover {
@@ -208,8 +213,9 @@ html {
 }
 
 .form-left input {
-    height: 70px;
+    height: 3rem;
     margin-bottom: 10px;
+    padding: 0.8rem;
 }
 
 .form-right {
@@ -268,6 +274,10 @@ footer p a {
 
     .about {
         display: block;
+    }
+
+    .description {
+        width: 100%;
     }
 
     .cards {
