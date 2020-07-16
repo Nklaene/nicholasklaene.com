@@ -1,0 +1,191 @@
+/* Animations */
+.bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 70%;
+    z-index: 0;
+    transform: translateZ(0);
+    list-style-type: none;
+}
+
+.bubbles li {
+    position: absolute;
+    list-style: none;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.1);
+    bottom: -100px;
+    animation: square 20s infinite;  
+    animation-delay: 1.2s;
+    animation-duration: 12s;
+}
+
+.bubbles li:nth-child(1) {
+    width: 2.5rem;
+    height: 2.5rem;
+    left: 20%;
+}
+
+.bubbles li:nth-child(2) {
+    width: 3.8rem;
+    height: 3.8rem;
+    left: 40%;
+    animation-delay: 1.2s;
+    animation-duration: 17s;
+    -webkit-animation-delay: 1.2s;
+    -webkit-animation-duration: 17s;
+}
+
+.bubbles li:nth-child(3) {
+    width: 1rem;
+    height: 1rem;
+    left: 60%;
+    animation-delay: 3s;
+    animation-duration: 13s;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-duration: 13s;
+}
+
+.bubbles li:nth-child(4) {
+    width: 5rem;
+    height: 5rem;
+    left: 80%;
+    animation-delay: 1s;
+    animation-duration: 22s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 22s;
+}
+
+
+.bubbles li:nth-child(5) {
+    width: 3rem;
+    height: 3rem;
+    left: 50%;
+    animation-delay: 7s;
+    animation-duration: 12s;
+    -webkit-animation-delay: 7s;
+    -webkit-animation-duration: 12s;
+}
+
+
+.bubbles li:nth-child(6) {
+    width: 3rem;
+    height: 3rem;
+    left: 80%;
+    animation-delay: 5s;
+    animation-duration: 16s;
+    -webkit-animation-delay: 5s;
+    -webkit-animation-duration: 16s;
+}
+
+
+.bubbles li:nth-child(7) {
+    width: 4rem;
+    height: 4rem;
+    left: 10%;
+    animation-delay: 2s;
+    animation-duration: 16s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-duration: 16s;
+}
+
+
+.bubbles li:nth-child(8) {
+    width: 3rem;
+    height: 3rem;
+    left: 50%;
+    animation-delay: 1s;
+    animation-duration: 25s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 25s;
+}
+
+
+.bubbles li:nth-child(9) {
+    width: 2rem;
+    height: 2rem;
+    left: 30%;
+    animation-delay: 5s;
+    animation-duration: 19s;
+    -webkit-animation-delay: 5s;
+    -webkit-animation-duration: 19s;
+}
+
+.bubbles li:nth-child(10) {
+    width: 4.7rem;
+    height: 4.7rem;
+    left: 90%;
+    animation-delay: 2s;
+    animation-duration: 22s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-duration: 22s;
+}
+
+.bubbles li:nth-child(11) {
+    width: 3.5rem;
+    height: 3.5rem;
+    left: 40%;
+    animation-delay: 8s;
+    animation-duration: 19s;
+    -webkit-animation-delay: 10s;
+    -webkit-animation-duration: 19s;
+}
+
+.bubbles li:nth-child(12) {
+    width: 3.9rem;
+    height: 3.9rem;
+    left: 65%;
+    animation-delay: 7s;
+    animation-duration: 22s;
+    -webkit-animation-delay: 8s;
+    -webkit-animation-duration: 22s;
+}
+
+
+.bubbles li:nth-child(13) {
+    width: 1.2rem;
+    height: 1.2rem;
+    left: 26%;
+    animation-delay: 6s;
+    animation-duration: 19s;
+    -webkit-animation-delay: 6s;
+    -webkit-animation-duration: 19s;
+}
+
+
+.bubbles li:nth-child(14) {
+    width: 4rem;
+    height: 4rem;
+    left: 95%;
+    animation-delay: 6s;
+    animation-duration: 21s;
+    -webkit-animation-delay: 6s;
+    -webkit-animation-duration: 21s;
+}
+
+.bubbles li:nth-child(15) {
+    width: 4rem;
+    height: 4rem;
+    left: 15%;
+    animation-delay: 4s;
+    animation-duration: 18s;
+    -webkit-animation-delay: 4s;
+    -webkit-animation-duration: 18s;
+}
+
+
+
+@keyframes square {
+
+    0% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-800px) rotate(540deg);
+        -webkit-transform: translateY(-1200px) rotate(630deg);
+    }
+
+}
