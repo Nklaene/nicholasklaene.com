@@ -14,7 +14,7 @@
     position: absolute;
     list-style: none;
     display: block;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
     bottom: -100px;
     animation: square 20s infinite;  
     animation-delay: 1.2s;
@@ -174,8 +174,6 @@
     -webkit-animation-duration: 18s;
 }
 
-
-
 @keyframes square {
 
     0% {
@@ -188,4 +186,10 @@
         -webkit-transform: translateY(-1200px) rotate(630deg);
     }
 
+}
+
+@media screen and (max-width: 800px) {
+    .bubbles {
+        height: 90%;
+    }
 }
