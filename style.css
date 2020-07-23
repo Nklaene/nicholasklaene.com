@@ -160,7 +160,7 @@ html {
 }
 
 .card {
-    flex-basis: 30%;
+    flex-basis: 25%;
     text-align: center;
     padding: 3rem 0;
     height: 300px;
