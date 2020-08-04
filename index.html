@@ -4,174 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- my css -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animation.css" type="text/css">
-    <!-- font awesome -->
+    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/bc3efcbc6a.js" crossorigin="anonymous"></script>
     <title>Nicholas Klaene</title>
 </head>
 
 <body>
 
-    <!-- introduction -->
-    <section class="introduction">
-
-        <ul class="bubbles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-
-        <img src="./images/Nick.png" alt="picture of nick">
-        <h1 class="hello intro-item">Hello!</h1>
-        <p class="short-description intro-item">I'm Nick, a first year Computer Science student.</p>
-        <a href="#contact" class="down"><i class="fas fa-sort-down"></i></a>
-
-    </section>
-
-    <!-- about -->
-    <section class="about">
-
-        <div class="description">
-
-            <h2 class="header">About me</h2>
-
-            <p>
-                I am a first year Computer Science student at Northern Kentucky University seeking an internship for the
-                Spring or Summer of 2021.
-                Though I am just a freshman, I completed my first year Computer Science requirements during highschool.
-                Along with this, I have done extensive amounts of studying/ coding outside of
-                school.
-                <br><br>
-                Technology has been my passion for as long as I can remember, I built my first computer and wrote my
-                first
-                line of code when I was just in middle school. I have never stopped learning since. Recently, I have
-                become
-                increasingly interested in web development & cloud computing. I have earned my <span>AWS Solutions
-                    Architect
-                    Associate</span> certification & completed a couple large side-projects which you can view below.
-            </p>
-
+    <!-- Introduction / Top -->
+    <div class="introduction">
+        <div class="introduction-container">
+            <h1 class="headline"><span>Hey there.</span> I'm Nicholas, Student & Developer.</h1>
+            <p class="currently">Currently studying Computer Science & Statistics at Northern Kentucky University & seeking an
+                internship for 2021.</p>
+            <a href="about.html" class="btn">Learn more about me</a>
         </div>
+    </div>
 
-        <div class="skills">
-            <h2 class="header">Skills</h2>
+    <!-- Work -->
 
-            <h4>Java</h4>
-            <div class="progress">
-                <span>filler</span>
-                <div class="bar java">filler</div>
+    <div class="work">
+        <h2 class="recent">Recent Projects</h2>
+        <div class="projects">
+
+            <div class="project">
+                <img src="images/tsrc.png">
+                <h3 class="project-name"><a href="https://github.com/Nklaene/tristaterunning" target="_blank">Tri State Running Company</a></h3>
+                <p class="project-description">Front-end only remodel of tristaterunning.com. No frameworks used.</p>
             </div>
 
-
-            <h4>Javascript</h4>
-            <div class="progress">
-                <span>filler</span>
-                <div class="bar js">filler</div>
+            <div class="project">
+                <img src="images/website.png">
+                <h3 class="project-name"><a href="https://github.com/Nklaene/nicholasklaene.com" target="_blank">Personal Website</a></h3>
+                <p class="project-description">Front-end project deployed on AWS using S3, Cloudfront & Route 53. Small
+                    back-end used for handling form data that I created with Node.js, API Gateway & AWS Lambda.</p>
             </div>
 
-            <h4>Vue.js</h4>
-            <div class="progress">
-                <span>filler</span>
-                <div class="bar vue">filler</div>
-            </div>
-
-
-            <h4>Python</h4>
-            <div class="progress">
-                <span>filler</span>
-                <div class="bar python">filler</div>
-            </div>
-
-            <h4>CSS</h4>
-            <div class="progress">
-                <span>filler</span>
-                <div class="bar css">filler</div>
+            <div class="project">
+                <img src="images/eye.png">
+                <h3 class="project-name"><a href="https://github.com/Nklaene/market-eye" target="_blank">Market Eye (in progress)</a></h3>
+                <p class="project-description">Full-stack serverless application allowing users to create a stock market
+                    watch list & recieve notifications based on their target prices.</p>
             </div>
 
         </div>
+    </div>
 
-    </section>
-
-    <!-- portfolio -->
-    <section class="portfolio">
-
-        <h1 class="projects">Projects</h1>
-        <div class="cards">
-
-            <div class="card">
-                <h3>This Website</h3>
-                <p class="proj-desc">This website was built with HTML, CSS, Javascript & Node.js. The front-end is
-                    deployed on Amazon S3 behind a Cloudfront distribution & the back-end was built with AWS Lambda &
-                    API Gateway.</p>
-
-                <a href="https://github.com/Nklaene/nicholasklaene.com" class="view" target="_blank">Code</a>
-            </div>
-
-            <div class="card">
-                <h3>Tri-State Running Company</h3>
-                <p class="proj-desc">This was my final project for INF 286 at NKU. 8 page front-end only remodel of
-                    Tri-State Running Company's website. No frameworks
-                    used -
-                    only pure HTML, CSS & Javascript</p>
-                <a href="https://github.com/Nklaene/tristaterunning" class="view" target="_blank">Code</a>
-            </div>
-
-        </div>
-
-
-    </section>
-
-    <!-- contact -->
-    <section class="contact" id="contact">
-
-        <h1 class="contact-me">Contact me</h1>
-
-        <form action="">
-
-            <div class="form-container">
-                <div class="form-left">
-                    <input type="text" id="name" name="email" placeholder="Name *" required>
-                    <input type="email" name="email" id="email" placeholder="Email *" required>
-                    <input type="text" name="company" id="company" placeholder="Company *" required>
-                </div>
-
-                <div class="form-right">
-                    <textarea name="message" id="message" placeholder="Message"></textarea>
-                    <input type="submit" value="Send Message">
-                </div>
-
-            </div>
-
-
-        </form>
-
-    </section>
-
-    <footer>
-
-        <p><a href="https://www.linkedin.com/in/nicholas-klaene-6526441a3" class="fab fa-linkedin"
-                target="_blank"></a><a href="mailto:nicholasklaene@gmail.com" class="fas fa-envelope-square"
-                target="_blank"></a><a href="https://www.github.com/Nklaene" class="fab fa-github" target="_blank"></a>
-        </p>
-
-    </footer>
-
-
-    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
